@@ -1,0 +1,632 @@
+                                    *,
+                                    *::before,
+                                    *::after {
+                                        padding: 0;
+                                        margin: 0;
+                                        border: 0;
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    a {
+                                        text-decoration: none;
+                                    }
+                                    
+                                    ul,
+                                    ol,
+                                    li {
+                                        list-style: none;
+                                    }
+                                    
+                                    img {
+                                        vertical-align: top;
+                                    }
+                                    
+                                    h1,
+                                    h2,
+                                    h3,
+                                    h4,
+                                    h5,
+                                    h6 {
+                                        font-weight: inherit;
+                                        font-size: inherit;
+                                    }
+                                    
+                                    html,
+                                    body {
+                                        height: 100%;
+                                        line-height: 1;
+                                        font-size: 14px;
+                                        color: #252b42;
+                                        font-weight: 500;
+                                        font-family: montserrat;
+                                    }
+                                    /*----------------------------------------------------------------------------------------------------------------------*/
+                                    
+                                    .wrapper {
+                                        overflow: hidden;
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    /*----------------------------------------------------------------------------------------------------------------------*/
+                                    
+                                    ._conteiner {
+                                        max-width: 1046px;
+                                        padding: 0px 15px;
+                                        margin: 0px auto;
+                                        box-sizing: content-box;
+                                    }
+                                    
+                                    ._ibg {
+                                        position: relative;
+                                    }
+                                    
+                                    ._ibg img {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        top: 0;
+                                        left: 0;
+                                        object-fit: cover;
+                                    }
+                                    /*----------------------------------------------------------------------------------------------------------------------*/
+                                    
+                                    .header {
+                                        position: absolute;
+                                        width: 100%;
+                                        left: 0;
+                                        top: 0;
+                                        z-index: 50;
+                                    }
+                                    
+                                    .head_conteiner {
+                                        display: flex;
+                                        min-height: 104px;
+                                        align-items: center;
+                                    }
+                                    
+                                    .header_logo {
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        color: inherit;
+                                    }
+                                    
+                                    @media(max-width: 479px) {
+                                        .head_conteiner {
+                                            min-height: 70px;
+                                        }
+                                    }
+                                    
+                                    .header_menu {
+                                        margin: 0px 0px 0px 133px;
+                                    }
+                                    
+                                    @media(max-width: 992px) {
+                                        .header_menu {
+                                            margin: 0px 0px 0px 80px;
+                                        }
+                                    }
+                                    
+                                    @media(max-width: 767px) {
+                                        .header_menu {
+                                            margin: 0px 0px 0px 40px;
+                                        }
+                                    }
+                                    
+                                    @media(max-width: 479px) {
+                                        .head_conteiner {
+                                            margin: 0px 0px 0px 20px;
+                                        }
+                                    }
+                                    
+                                    .menu_list {
+                                        flex-wrap: wrap;
+                                        display: flex;
+                                    }
+                                    
+                                    .menu_item:not(:last-child) {
+                                        margin: 0px 21px 0px 0px;
+                                    }
+                                    
+                                    .menu_link {
+                                        color: #737373;
+                                        line-height: 600;
+                                        line-height: calc(24 / 14 * 100%);
+                                    }
+                                    /*___________main_________________________________________________________________*/
+                                    
+                                    .page {
+                                        flex: 1 1 auto;
+                                    }
+                                    
+                                    .page__service {
+                                        margin: -111px 0px 0px 0px;
+                                        position: relative;
+                                        z-index: 2;
+                                    }
+                                    /*___________Подвал__________________________________________________________________*/
+                                    
+                                    .main_block {
+                                        position: relative;
+                                    }
+                                    
+                                    .main_block_body {
+                                        padding: 184px 0px 191px 0px;
+                                        position: relative;
+                                        z-index: 2;
+                                        max-width: 400px;
+                                    }
+                                    
+                                    .main_block_body>*:not(last-child) {
+                                        margin: 0px 0px 35px 0px;
+                                    }
+                                    
+                                    .main_block_title {
+                                        font-size: 58px;
+                                        line-height: 137%;
+                                        font-weight: 800;
+                                        letter-spacing: 0.2px;
+                                    }
+                                    
+                                    .main_block_text {
+                                        color: #737373;
+                                        font-size: 20px;
+                                        line-height: 1.5;
+                                    }
+                                    
+                                    .main_block_buttons {
+                                        display: inline-flex;
+                                    }
+                                    
+                                    .main_block_button__orange_border {
+                                        background: #FF7B47;
+                                        color: #FFFFFF;
+                                        border-radius: 37px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 10px 36px;
+                                        min-height: 48px;
+                                        letter-spacing: 0.2px;
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                        line-height: 150%;
+                                    }
+                                    
+                                    .main_block_button__button_border {
+                                        color: #0D5C63;
+                                        border-radius: 37px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 10px 36px;
+                                        min-height: 48px;
+                                        letter-spacing: 0.2px;
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                        line-height: 150%;
+                                        border: 1px solid #0D5C63;
+                                        margin-left: 10px;
+                                    }
+                                    
+                                    .main_block_image {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                    
+                                    @media (max-width: 1400px) {
+                                        .main_block_image img {
+                                            object-position: right;
+                                        }
+                                    }
+                                    
+                                    @media (max-width: 950px) {
+                                        .main_block_image {
+                                            opacity: 0.5;
+                                        }
+                                    }
+                                    /*---------------------------------Сервис контейнер--------------------------------------------------*/
+                                    
+                                    .conteiner_services {
+                                        display: flex;
+                                        justify-content: center;
+                                        width: 100%;
+                                        z-index: 2;
+                                    }
+                                    
+                                    .services_cards {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+                                        margin-top: -100px;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .service_card {
+                                        margin: 20px 20px;
+                                        padding: 30px;
+                                        width: 20%;
+                                        background-color: #FFFFFF;
+                                    }
+                                    
+                                    .icon3 {
+                                        color: white;
+                                    }
+                                    
+                                    .services_text.text3 {
+                                        color: white;
+                                    }
+                                    
+                                    .services_paragraph.text3 {
+                                        color: white;
+                                    }
+                                    
+                                    .card3 {
+                                        background-color: #0D5C63;
+                                    }
+                                    
+                                    .services_text {
+                                        font-weight: 700;
+                                        font-size: 24px;
+                                        line-height: 32px;
+                                        letter-spacing: 0.1px;
+                                        color: #252B42;
+                                    }
+                                    
+                                    .services_paragraph {
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #737373;
+                                    }
+                                    /*---------------------------------Статистик контейнер------------------------------------------------------------------------------*/
+                                    
+                                    .statistic {
+                                        margin: 80px;
+                                    }
+                                    
+                                    .statistic_text {
+                                        font-weight: 700;
+                                        font-size: 40px;
+                                        letter-spacing: 0.1px;
+                                        margin-bottom: 45px;
+                                    }
+                                    
+                                    .statistic_textH2 {
+                                        text-align: center;
+                                        letter-spacing: 0.2px;
+                                        padding: 10px;
+                                    }
+                                    
+                                    .services_paragraph {
+                                        text-align: center;
+                                        letter-spacing: 0.2px;
+                                        margin: 20px;
+                                    }
+                                    
+                                    .statistic_card {
+                                        padding: 30px 40px;
+                                    }
+                                    
+                                    .statistic_cards {
+                                        display: flex;
+                                        justify-content: center;
+                                        margin: 30px;
+                                        flex-wrap: wrap;
+                                    }
+                                    
+                                    .card_icon {
+                                        width: 48px;
+                                        height: 48px;
+                                        justify-content: center;
+                                    }
+                                    
+                                    .statistic_h5 {
+                                        justify-content: center;
+                                        color: #737373;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                    /*---------------------------------ПРактик  контейнер------------------------------------------------------------------------------*/
+                                    
+                                    .practical_advice {
+                                        width: 1076px;
+                                        margin: auto;
+                                    }
+                                    
+                                    .practical_advice_conteiner {
+                                        display: flex;
+                                        justify-content: center;
+                                        margin-bottom: 80px;
+                                        flex-wrap: wrap;
+                                    }
+                                    
+                                    .practical_advice_cards {
+                                        display: flex;
+                                        text-align: center;
+                                        justify-content: center;
+                                    }
+                                    
+                                    .practical_advice_card {
+                                        margin: 0px 30px;
+                                        vertical-align: bottom;
+                                    }
+                                    
+                                    .text_h5 {
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                    
+                                    .practical_advice_card_img {
+                                        padding: 0px 60% 0px 0px;
+                                    }
+                                    /*___________________________________________TRUSTED_________________________________________________________________________________*/
+                                    
+                                    .trusted_conteiner {
+                                        width: 1076px;
+                                        margin: auto;
+                                    }
+                                    
+                                    .trusted_conteiner_text {
+                                        margin-top: 100px;
+                                        justify-content: center;
+                                    }
+                                    
+                                    .trusted_conteiner_media {
+                                        display: flex;
+                                        margin: 100px 0px 100px 0px;
+                                    }
+                                    
+                                    .trusted_img {
+                                        width: 597px;
+                                        height: 442px;
+                                    }
+                                    
+                                    .trusted_conteiner_media_text {
+                                        margin-left: 100px;
+                                    }
+                                    
+                                    .trusted_text {
+                                        text-align: center;
+                                        font-weight: 700;
+                                        font-size: 40px;
+                                        letter-spacing: 0.1px;
+                                        margin-bottom: 45px;
+                                        color: #252B42;
+                                    }
+                                    
+                                    .media_text {
+                                        position: left;
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    .services_paragraph_t {
+                                        letter-spacing: 0.2px;
+                                        margin: 30px 0px 30px 0px;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #737373;
+                                    }
+                                    /*--------------------------------------LOGO PANEL --------------------------------------------------------------------------*/
+                                    
+                                    .panel_logo {
+                                        width: 1440px;
+                                        height: 400px;
+                                        margin: auto;
+                                    }
+                                    
+                                    .logotips>*:not(last-child) {
+                                        margin: 40px;
+                                    }
+                                    
+                                    .logotips {
+                                        justify-content: center;
+                                        text-align: center;
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    .panel_search {
+                                        width: 950px;
+                                        height: 141px;
+                                        background-color: #17213C;
+                                        margin: auto;
+                                        margin-bottom: -40px;
+                                        position: relative;
+                                    }
+                                    
+                                    .search_but {
+                                        background: #FF7B47;
+                                        border: 1px solid #E6E6E6;
+                                        border-radius: 0px 5px 5px 0px;
+                                        height: 70px;
+                                        width: 100px;
+                                        color: white;
+                                        margin: 0.1px;
+                                    }
+                                    
+                                    .form {
+                                        left: 0px;
+                                        right: 0px;
+                                        top: 0px;
+                                        bottom: 0px;
+                                        background: #F9F9F9;
+                                        border: 1px solid #E6E6E6;
+                                        border-radius: 5px;
+                                    }
+                                    
+                                    .search_div {
+                                        padding-left: 250px;
+                                    }
+                                    
+                                    .search_h3 {
+                                        color: #FFFFFF;
+                                        margin: 30px;
+                                        position: absolute;
+                                        font-weight: 700;
+                                        font-size: 24px;
+                                        line-height: 32px;
+                                        letter-spacing: 1px;
+                                        display: flex;
+                                    }
+                                    
+                                    .background_panel {
+                                        width: 1440px;
+                                        height: 77px;
+                                        background-color: #252B42;
+                                        position: inherit;
+                                    }
+                                    /*__________________________________________Touch panel _________________________________________________________________________________*/
+                                    
+                                    .touch_conteiner {
+                                        width: 1076px;
+                                        margin: auto;
+                                    }
+                                    
+                                    .trusted_text {
+                                        margin: 40px 0px 80px 0px;
+                                    }
+                                    
+                                    .touch_cards {
+                                        justify-content: center;
+                                        display: flex;
+                                        margin-top: 70px;
+                                    }
+                                    
+                                    .touch_card {
+                                        text-align: center;
+                                        height: 400px;
+                                    }
+                                    
+                                    .touch_card>*:not(last-child) {
+                                        margin: 30px;
+                                    }
+                                    
+                                    .card_dark {
+                                        background-color: #252B42;
+                                        color: white;
+                                    }
+                                    
+                                    .sumbit_d {
+                                        color: white;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        border: 1px solid;
+                                        border-radius: 10px;
+                                        padding: 10px;
+                                    }
+                                    
+                                    .mail {
+                                        line-height: 24px;
+                                    }
+                                    
+                                    .text_h5 {}
+                                    
+                                    .media_text {}
+                                    
+                                    .sumbit {
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        border: 1px solid;
+                                        border-radius: 10px;
+                                        color: #FF7B47;
+                                        padding: 10px;
+                                    }
+                                    
+                                    .almost_footer {
+                                        width: 100%;
+                                        height: 260px;
+                                        background-color: #17213C;
+                                    }
+                                    
+                                    .almost_f {
+                                        margin: 150px;
+                                    }
+                                    /*-------------------------------------------------Agency panel---------------------------------------------------------*/
+                                    
+                                    .agency {
+                                        width: 1044px;
+                                        display: flex;
+                                        padding: 30px;
+                                        margin: auto;
+                                    }
+                                    
+                                    .agency_text {
+                                        display: flex;
+                                        justify-content: space-around;
+                                        width: 100%;
+                                        margin-bottom: 40px;
+                                    }
+                                    
+                                    .text {}
+                                    
+                                    .services_text_h3 {
+                                        font-weight: 700;
+                                        font-size: 24px;
+                                        line-height: 32px;
+                                        letter-spacing: 0.1px;
+                                        color: #252B42;
+                                    }
+                                    
+                                    .trusted_H6 {
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        letter-spacing: 0.2px;
+                                        color: #737373;
+                                    }
+                                    
+                                    .agency_button {
+                                        background: #FF7B47;
+                                        border-radius: 5px;
+                                        align-items: center;
+                                        padding: 15px 40px;
+                                    }
+                                    
+                                    .media_text_button {
+                                        color: white;
+                                    }
+                                    
+                                    .ul_agency {
+                                        display: flex;
+                                        color: white;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        margin: 20px;
+                                    }
+                                    
+                                    .link {
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 34px;
+                                        color: white;
+                                    }
+                                    
+                                    .agency_h5 {
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                    
+                                    .cont_lint {
+                                        margin-bottom: 10px;
+                                        line-height: 24px;
+                                    }
+                                    /*---------------------------------------FOOTER-------------------------------------------------------------------------------------------------------*/
+                                    
+                                    .footer {
+                                        justify-content: space-around;
+                                        margin-top: -80px;
+                                    }
+                                    
+                                    .info_footer {
+                                        display: flex;
+                                        justify-content: space-around;
+                                    }
+                                    
+                                    .icon_footer {}
